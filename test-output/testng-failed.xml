@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [My Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestFacebook(failed)">
+    <parameter name="author" value="Rani"/>
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testcases.ExtentReportTestNG">
+        <methods>
+          <include name="launchApp"/>
+          <include name="generateExtentReports"/>
+          <include name="closeApp"/>
+          <include name="checkStatus"/>
+          <include name="TestFacebook"/>
+          <include name="initialiseExtentReports"/>
+        </methods>
+      </class> <!-- testcases.ExtentReportTestNG -->
+    </classes>
+  </test> <!-- TestFacebook(failed) -->
+  <test thread-count="5" name="TestOrangeHrm(failed)">
+    <parameter name="author" value="Raju"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testcases.ExtentReportTestNG">
+        <methods>
+          <include name="launchApp"/>
+          <include name="generateExtentReports"/>
+          <include name="closeApp"/>
+          <include name="checkStatus"/>
+          <include name="initialiseExtentReports"/>
+          <include name="TestOrangeHrm"/>
+        </methods>
+      </class> <!-- testcases.ExtentReportTestNG -->
+    </classes>
+  </test> <!-- TestOrangeHrm(failed) -->
+</suite> <!-- Failed suite [My Suite] -->
