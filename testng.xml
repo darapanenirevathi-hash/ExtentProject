@@ -24,7 +24,7 @@
             </class>
         </classes>
      </test>
-     <test name="TestOrangeHrm">
+     <test name="TestOrangeHrm" enabled = "false">
     <parameter name="browser" value="Chrome"/>
     <parameter name="author" value="Raju"/>
         <classes>

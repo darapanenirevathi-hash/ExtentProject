@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-My_Suite" class="show-methods failed suite-My_Suite"> (show)</a> <!-- show-methods failed suite-My_Suite -->
                     </span>
                     <div class="method-list-content failed suite-My_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-My_Suite" title="testcases.ExtentReportTestNG" class="method navigator-link" hash-for-method="TestFacebook">TestFacebook</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-My_Suite" title="testcases.ExtentReportTestNG" class="method navigator-link" hash-for-method="TestOrangeHrm">TestOrangeHrm</a> <!-- method navigator-link -->
@@ -120,6 +115,11 @@
                       <a href="#" panel-name="suite-My_Suite" class="show-methods passed suite-My_Suite"> (show)</a> <!-- show-methods passed suite-My_Suite -->
                     </span>
                     <div class="method-list-content passed suite-My_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_Suite" title="testcases.ExtentReportTestNG" class="method navigator-link" hash-for-method="TestFacebook">TestFacebook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-My_Suite" title="testcases.ExtentReportTestNG" class="method navigator-link" hash-for-method="TestGoogle">TestGoogle</a> <!-- method navigator-link -->
@@ -145,18 +145,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestFacebook">
-                  </a> <!-- TestFacebook -->
-                  <span class="method-name">TestFacebook</span>
-                  <div class="stack-trace">java.lang.AssertionError: Title mismatched expected [Log in to Facebook] but found [Facebook – log in or sign up]
-	at testcases.ExtentReportTestNG.TestFacebook(ExtentReportTestNG.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TestOrangeHrm">
                   </a> <!-- TestOrangeHrm -->
                   <span class="method-name">TestOrangeHrm</span>
@@ -166,8 +154,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-11QV4DI1&apos;, ip: &apos;192.168.29.107&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\Revathi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63985}, goog:processID: 16024, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 39d1f6f453fbec343c419759652a1ec2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.146 (c1224fc40c9..., userDataDir: C:\Users\Revathi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53022}, goog:processID: 23692, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46f7655a5968aebe3468d13d5b87f393
 *** Element info: {Using=partial link text, value=Welcome}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -179,7 +167,7 @@ Session ID: 39d1f6f453fbec343c419759652a1ec2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
 	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testcases.ExtentReportTestNG.TestOrangeHrm(ExtentReportTestNG.java:79)
+	at testcases.ExtentReportTestNG.TestOrangeHrm(ExtentReportTestNG.java:81)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -193,6 +181,13 @@ Session ID: 39d1f6f453fbec343c419759652a1ec2
               <span class="class-name">testcases.ExtentReportTestNG</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestFacebook">
+                  </a> <!-- TestFacebook -->
+                  <span class="method-name">TestFacebook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TestGoogle">
@@ -316,20 +311,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestOrangeHrm')
 data.setCell(0, 2, 'testcases.ExtentReportTestNG')
-data.setCell(0, 3, 21952);
+data.setCell(0, 3, 24506);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TestGoogle')
 data.setCell(1, 2, 'testcases.ExtentReportTestNG')
-data.setCell(1, 3, 2622);
+data.setCell(1, 3, 2232);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TestFacebook')
 data.setCell(2, 2, 'testcases.ExtentReportTestNG')
-data.setCell(2, 3, 1427);
+data.setCell(2, 3, 1424);
 window.suiteTableData['My_Suite']= { tableData: data, tableDiv: 'times-div-My_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-My_Suite">
               </div> <!-- times-div-My_Suite -->
             </div> <!-- times-div -->
@@ -378,60 +373,58 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">launchApp(org.testng.TestRunner@2f860823, Chrome, Revathi)</span>
-                <span class="method-start">270 ms</span>
+                <span class="method-name">launchApp(org.testng.TestRunner@32e652b6, Chrome, Revathi)</span>
+                <span class="method-start">199 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TestGoogle</span>
-                <span class="method-start">2130 ms</span>
+                <span class="method-start">1558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void testcases.ExtentReportTestNG.TestGoogle(), [TestResult name=TestGoogle status=SUCCESS me...)</span>
-                <span class="method-start">4758 ms</span>
+                <span class="method-start">3791 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">4776 ms</span>
+                <span class="method-start">3809 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">launchApp(org.testng.TestRunner@696b4a95, Firefox, Rani)</span>
-                <span class="method-start">5637 ms</span>
+                <span class="method-name">launchApp(org.testng.TestRunner@4ba02375, Firefox, Rani)</span>
+                <span class="method-start">3986 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TestFacebook</span>
-                <span class="method-start">8414 ms</span>
+                <span class="method-start">6475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">checkStatus(public void testcases.ExtentReportTestNG.TestFacebook(), [TestResult name=TestFacebook status=FAILUR...)</span>
-                <span class="method-start">9850 ms</span>
+                <span class="method-name">checkStatus(public void testcases.ExtentReportTestNG.TestFacebook(), [TestResult name=TestFacebook status=SUCCES...)</span>
+                <span class="method-start">7901 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">10019 ms</span>
+                <span class="method-start">7902 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">launchApp(org.testng.TestRunner@6c1cfa53, Chrome, Raju)</span>
-                <span class="method-start">11213 ms</span>
+                <span class="method-name">launchApp(org.testng.TestRunner@7593ea79, Chrome, Raju)</span>
+                <span class="method-start">9377 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestOrangeHrm</span>
-                <span class="method-start">12243 ms</span>
+                <span class="method-start">10209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">checkStatus(public void testcases.ExtentReportTestNG.TestOrangeHrm(), [TestResult name=TestOrangeHrm status=FAIL...)</span>
-                <span class="method-start">34197 ms</span>
+                <span class="method-name">checkStatus(public void testcases.ExtentReportTestNG.TestOrangeHrm() throws java.lang.Exception, [TestResult nam...)</span>
+                <span class="method-start">34717 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">34482 ms</span>
+                <span class="method-start">34959 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateExtentReports</span>
-                <span class="method-start">34928 ms</span>
+                <span class="method-start">35143 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

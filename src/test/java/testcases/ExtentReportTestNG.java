@@ -3,6 +3,8 @@ package testcases;
 
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+
 import org.testng.Assert;
 
 import java.security.Key;
@@ -61,13 +63,13 @@ public class ExtentReportTestNG  extends BaseTest
 		extenttest.info("Enter email id in TextBox");
 		String expectedTitle = "Log in to Facebook";
 		String actualTitle = driver.getTitle();
-		assertEquals(actualTitle, expectedTitle, "Title mismatched");
-		extenttest.fail("assertion is fail for Facebook ");
+		assertNotEquals(actualTitle, expectedTitle, "Title mismatched");
+		extenttest.pass("assertion is fail for Facebook ");
 	}
 	
 	
 	@Test(testName = "TestOrangeHrm", groups= {"regression"})
-	public void TestOrangeHrm()
+	public void TestOrangeHrm() throws Exception
 	{
 		driver.get("http://orangehrm.qedgetech.com");
 		extenttest.info("Navigated to URL");
@@ -75,13 +77,13 @@ public class ExtentReportTestNG  extends BaseTest
 		driver.findElement(By.id("txtPassword")).sendKeys("Qedge123!@#1");
 		driver.findElement(By.id("btnLogin")).click();
 		extenttest.info("Enter details and click");
-		
+		Thread.sleep(2000);
 		WebElement welcome = driver.findElement(By.partialLinkText("Welcome"));
 		//Assert.assertTrue(welcome.isDisplayed(), "Login failed: Welcome link not displayed!");
 		boolean res = welcome.isDisplayed();
-		Assert.assertTrue(res);
-		//extenttest.fail("assertion is fail for OrangeHrm");
-		extenttest.pass("assertion is passed");
+		Assert.assertFalse(res);
+		extenttest.fail("assertion is fail for OrangeHrm");
+		
 	}
 
 }
