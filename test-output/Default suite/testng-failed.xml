@@ -10,7 +10,6 @@
           <include name="closeApp"/>
           <include name="checkStatus"/>
           <include name="initialiseExtentReports"/>
-          <include name="TestFacebook"/>
           <include name="TestOrangeHrm"/>
         </methods>
       </class> <!-- testcases.ExtentReportTestNG -->

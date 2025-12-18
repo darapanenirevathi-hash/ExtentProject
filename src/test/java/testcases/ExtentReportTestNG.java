@@ -77,13 +77,28 @@ public class ExtentReportTestNG  extends BaseTest
 		driver.findElement(By.id("txtPassword")).sendKeys("Qedge123!@#1");
 		driver.findElement(By.id("btnLogin")).click();
 		extenttest.info("Enter details and click");
-		Thread.sleep(2000);
-		WebElement welcome = driver.findElement(By.partialLinkText("Welcome"));
-		//Assert.assertTrue(welcome.isDisplayed(), "Login failed: Welcome link not displayed!");
-		boolean res = welcome.isDisplayed();
-		Assert.assertFalse(res);
-		extenttest.fail("assertion is fail for OrangeHrm");
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
+	    try {
+	        WebElement errorMsg = wait.until(
+	            ExpectedConditions.visibilityOfElementLocated(
+	                By.id("spanMessage"))
+	        );
+
+	        Assert.assertEquals(
+	            errorMsg.getText(),
+	            "Invalid credentials",
+	            "Error message mismatch");
+
+	        extenttest.pass("Invalid login validated successfully");
+
+	    } catch (Exception e) {
+	        extenttest.fail("Invalid login test failed: " + e.getMessage());
+	        Assert.fail("Invalid login validation failed");
+	    }
+	}
 		
 	}
 
-}
+
